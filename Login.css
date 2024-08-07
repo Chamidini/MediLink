@@ -79,7 +79,28 @@
   margin: 8px 0;
 }
 
-.fButton .cButton{
+.cButton {
+  position: relative;
+  width: 138px;
+  height: 27px;
+  background: #007E85;
+  border-radius: 8px;
+
+  /*position: absolute;*/
+  width: 150px;
+  height: 23px;
+  left: 11px;
+  top: 4px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.rButton {
   position: relative;
   width: 138px;
   height: 27px;
