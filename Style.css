@@ -1,0 +1,392 @@
+/* -----------------header-------------------------------- */
+/*.bg-teal {
+  background-color: #007E85; /* Matches the teal color in your footer ---
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+*/
+
+/* General Styles */
+html, body {
+  height: 100%;  /* Ensure the body takes full height */
+  margin: 0;
+}
+
+header{
+  font-family: 'Lexend Tera', sans-serif;
+}
+
+.content-wrapper {
+  flex: 1 0 auto;  /* Ensures content wrapper grows and pushes the footer down */
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #ECECEC;
+}
+
+footer {
+  background-color: #007E85;
+  margin-top: auto;  /* This pushes the footer to the bottom when content is small */
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.Frame2{
+  padding-left: 70px;
+}
+
+.Frame2 img {
+  width: 69px;
+  height: 62px;
+  border-radius: 100px;
+}
+
+.Frame2-text {
+  font-family: 'Lexend Tera';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: -0.09em;
+  text-transform: capitalize;
+  color: #007E85;
+}
+
+.Frame1 {
+  display: flex;
+  list-style-type: none;
+  gap: 26px;
+}
+
+.Frame1 a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-family: 'Lexend Tera', sans-serif;
+  position: relative;
+}
+
+.Frame1 a:hover {
+  color: #007E85;
+}
+
+.Frame1 a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #007E85;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.Frame1 a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* Frame3 */
+.Frame3 a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.signup {
+  color: #007E85;
+}
+
+.login {
+  background-color: #007E85;
+  color: white;
+}
+
+.login:hover, .signup:hover {
+  opacity: 0.8;
+}
+
+/* Footer */
+.bg-teal {
+  background-color: #007E85;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* -------------------------------------Login page--------------------- */
+
+/* .container{
+  align-items: center;
+}
+
+.button{
+  align-items: center;
+} */
+
+body {
+  background-color: #f8f9fa;
+}
+
+/* .container{
+  box-sizing: border-box;
+
+  position: relative;
+  width: 1616px;
+  height: 1296px;
+
+  background: #C1BABA;
+  border: 2px solid #E6E6E6;
+  border-radius: 12px;
+} */
+
+.login-container {
+  border-radius: 10px;
+  padding: 50px;
+  padding-left: 90px;
+  padding-right: 90px;
+  width: 600px; 
+  height: 500px;
+
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+  background-color: #fff;
+}
+
+.btn-secondary {
+  background-color: #bfc3c6;
+  border: none;
+  border-radius: 6px;
+  color: black;
+  background-color: #007E85;  
+  font-size: 12px;
+}
+
+.btn-secondary span{
+  color: #000000CC;
+  font-weight: 500;
+  /* font-family: Inter;
+  font-size: 30px;  
+  line-height: 45px;*/
+  letter-spacing: -0.019em; 
+  text-align: center;
+
+}
+
+h3{
+    /* MediLink */
+
+  /* position: absolute; 
+  width: 259px;
+  height: 90px; 
+  left: 678px;
+  top: 221.18px; */
+  text-align: center;
+
+  /* font-family: 'Inter'; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 90px;
+  /* identical to box height, or 90px */
+  letter-spacing: -0.022em;
+
+  color: #1E1E1E;
+}
+
+.input{
+  border: 2px solid #007E85;
+  border-radius: 5px;
+}
+
+a{
+  color: #1E1E1E; 
+  text-decoration: none;
+  /* font-family: Inter;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: -0.019em;
+  text-align: left; */
+}
+
+a:hover {
+  color: #007E85; /* Darker teal on hover */
+}
+
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #B3B3B3
+}
+
+.or{
+  width: Fixed (61.88px)px;
+  height: Fixed (62px)px;
+  left: 369.06px;
+  padding: 8px 0px 0px 0px;
+  gap: 10px;
+  border-radius: 6px 0px 0px 0px;
+  opacity: 0px;
+
+}
+
+/* -------------------------forgot password------------------------ */
+
+.forgot-password-container{
+  max-width: 600px;
+  margin: 225px auto;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  background-color: #fff;
+  height: 300px;
+  text-align: left;
+}
+
+.forgot-password-container p{
+  color: #757575;
+  font-size: 13px;
+  font-weight: 500;
+  /* font-family: Inter; 
+  font-size: 30px;
+  line-height: 45px;*/
+  letter-spacing: -0.019em;
+
+}
+
+h4{
+  /* font-family: Inter; 
+  line-height: 67.5px;
+  font-size: 45px;*/
+  font-weight: 500;
+  letter-spacing: -0.022em;
+  text-align: left;  
+}
+
+/* ---------------------------verification code form------------------ */
+
+.verification-container {
+  max-width: 600px;
+  margin: 225px auto;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  background-color: #fff;
+  border-radius: 12px 0px 0px 0px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px;
+  text-align: left;
+}
+
+/* .verification-container button {
+  width: 100%;
+} */
+
+.verification-container p{
+  color: #717374;
+  font-size: 13px;
+}
+
+.box{
+  border: 2px solid #007E85;
+}
+
+/* --------------------------------------reset-password------------------ */
+
+.reset-password-container{
+  /* width: 1616px;
+  height: 1088px;
+  top: -652px;
+  left: 1736px;
+  gap: 0px;
+  border-radius: 12px 0px 0px 0px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px; */
+
+  max-width: 600px;
+  margin: 225px auto;
+  padding: 40px;
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+  border-radius: 12px;
+  background-color: #fff;
+  height: 350px;
+  text-align: left;
+}
+
+
+
+/* -----------------------------create an account---------------------- */
+
+/* .create-account-container{
+  /* width: 700px;
+  height: 1952px;
+  top: -849px;
+  left: 3498px;
+  gap: 0px;
+  border-radius: 12px 0px 0px 0px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px; *
+
+  max-width: 700px;
+  margin: 225px auto;
+  padding: 50px;
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); *
+  border-radius: 12px;
+  background-color: #fff;
+  height: 800px;
+  text-align: left;
+}
+
+.row{
+ padding: auto;
+} */
+
+.create-account-container {
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.form-control, .form-select {
+  border: 2px solid #008080; /* Teal border */
+  border-radius: 5px;
+}
+
+/* .btn-primary {
+  background-color: #008080;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #006666; /* Darker teal on hover 
+}
+ */
